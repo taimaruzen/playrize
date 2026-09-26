@@ -75,7 +75,7 @@ function App() {
               </p>
 
               <p className="home-text">
-                ゲームを遊んで、シェアして、楽しもう。
+                ゲームを遊んで、シェアして、楽しもう。TEST
               </p>
 
               <Link to="/games" className="home-button">
