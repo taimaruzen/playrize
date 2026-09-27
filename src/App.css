@@ -355,6 +355,9 @@ body::-webkit-scrollbar,
 .game-frame {
   border: none;
   display: block;
+
+  width: min(100vw, calc(100dvh * var(--game-ratio)));
+  height: min(100dvh, calc(100vw / var(--game-ratio)));
 }
 
 /* =========================
