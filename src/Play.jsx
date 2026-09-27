@@ -27,7 +27,7 @@ function Play() {
     {game && (
   <div className="game-framebox"
     style={{
-      "--game-ratio": `${game.width} / ${game.height}`,
+      aspectRatio: `${game.width} / ${game.height}`,
     }}>
     <iframe
       className="game-frame"
