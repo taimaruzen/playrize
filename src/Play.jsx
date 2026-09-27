@@ -29,8 +29,7 @@ function Play() {
     className="game-frame"
     src={game.url}
     title={game.title}
-    width={game.width}
-    height={game.height}
+    
   ></iframe>
 )}
       
