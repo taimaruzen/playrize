@@ -25,18 +25,13 @@ function Play() {
     <>
       
     {game && (
-  <div
-  className="game-container"
-  style={{
-    aspectRatio: `${game.width} / ${game.height}`,
-  }}
->
   <iframe
     className="game-frame"
     src={game.url}
     title={game.title}
+    width={game.width}
+    height={game.height}
   ></iframe>
-</div>
 )}
       
       
