@@ -37,10 +37,9 @@ body::-webkit-scrollbar,
 
 .game-frame {
   width: 100%;
-  height: 100%;
+  height: auto;
   border: none;
   display: block;
-  aspect-ratio: 16 / 9;
 }
 
 .main-box{
