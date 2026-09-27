@@ -30,6 +30,7 @@ function Play() {
       className="game-frame"
       src={game.url}
       title={game.title}
+      
       allowFullScreen
     />
   

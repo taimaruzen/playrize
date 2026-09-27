@@ -11,8 +11,7 @@ body,
     color: white;
     scrollbar-width: none;
     font-family: Arial, sans-serif;
-    width: 100%;
-  min-height: 100%;
+    overflow: hidden;
     
     
 }
