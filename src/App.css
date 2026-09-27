@@ -38,12 +38,6 @@ body::-webkit-scrollbar,
   margin: 0 auto;
 }
 
-.game-framebox {
-  width: 100%;
-  height: auto;
-  border: none;
-  display: block;
-}
 
 .main-box{
     position: sticky;
@@ -343,7 +337,29 @@ body::-webkit-scrollbar,
   display: block;
   border-radius: 20px;
 }
+/* =========================
+   GAMEプレイ画面
+========================= */
+.game-framebox {
+  /* 画面いっぱいに使える領域を確保 */
+  width: 100vw;
+  height: 100dvh; /* モバイルのアドレスバー分もちゃんと計算される */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* はみ出た分でスクロールが発生しないように */
+  box-sizing: border-box;
+  padding: 8px; /* お好みで余白 */
+}
 
+.game-frame {
+  aspect-ratio: var(--game-ratio);
+  border: none;
+
+  /* 横幅優先で、縦がはみ出るなら縦基準に切り替わる */
+  width: min(100%, calc((100dvh - 16px) * (var(--game-ratio))));
+  height: min(100%, calc((100vw - 16px) / (var(--game-ratio))));
+}
 
 /* =========================
    スマホ用
