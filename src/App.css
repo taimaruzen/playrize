@@ -340,21 +340,13 @@ body::-webkit-scrollbar,
 /* =========================
    GAMEプレイ画面
 ========================= */
-.game-framebox {
-  width: 100vw;
-  height: 100dvh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
-  box-sizing: border-box;
-}
 
 .game-frame {
-    border: none;
+  border: none;
   display: block;
+  width: 100vw;
+  height: 100dvh;
 
 }
 

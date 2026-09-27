@@ -25,17 +25,14 @@ function Play() {
     <>
       
     {game && (
-  <div className="game-framebox"
-    style={{
-      aspectRatio: `${game.width} / ${game.height}`,
-    }}>
+  
     <iframe
       className="game-frame"
       src={game.url}
       title={game.title}
       allowFullScreen
     />
-  </div>
+  
 )}
       
       
