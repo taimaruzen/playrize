@@ -25,14 +25,15 @@ function Play() {
     <>
       
     {game && (
+  <div className="game-framebox">    
   <iframe
     className="game-frame"
     src={game.url}
     title={game.title}
-    width="100%"
-    height="600"
-    scrolling="no"
+    width={game.width}
+    height={game.height}
   ></iframe>
+  </div>
 )}
       
       

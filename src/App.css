@@ -42,8 +42,8 @@ body::-webkit-scrollbar,
   margin: 0 auto;
 }
 
-.game-frame {
-    width: 100%;
+.game-framebox {
+  width: 100%;
   height: 100%;
   border: none;
   display: block;
