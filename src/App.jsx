@@ -66,23 +66,87 @@ function App() {
       </div>
 
 
-          {location.pathname === "/" &&(
-            <div className="home-main">
-              <h1>PLAYRIZE</h1>
+      {location.pathname === "/" && (
+  <main className="home-main">
 
-              <p className="home-sub">
-                PLAY. SHARE. RISE.
-              </p>
+    {/* 背景の光 */}
+    <div className="home-glow home-glow-1"></div>
+    <div className="home-glow home-glow-2"></div>
 
-              <p className="home-text">
-                ゲームを遊んで、シェアして、楽しもう。
-              </p>
+    {/* メインコンテンツ */}
+    <div className="home-content">
 
-              <Link to="/games" className="home-button">
-                PLAY GAME
-              </Link>
-            </div> 
-          )}
+      <p className="home-label">
+        PLAY • SHARE • RISE
+      </p>
+
+      <h1 className="home-title">
+        PLAYRIZE
+      </h1>
+
+      <p className="home-text">
+        無料オンラインゲームを、すぐに楽しもう。
+      ゲームが遊ばれるほど、ショップの商品がお得に。
+      </p>
+
+      {/* ゲームへ */}
+      <div className="home-buttons">
+
+      <Link to="/games" className="home-button">
+        PLAY GAME
+        <span>→</span>
+      </Link>
+
+      <a
+        href="https://shop.playrize.net/"
+        className="home-button"
+      >
+        SHOP
+        <span>→</span>
+      </a>
+
+    </div>
+      {/* SNS */}
+      <div className="home-social">
+
+        <a
+          href="https://x.com/PLAYRIZE109"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <span className="social-icon">𝕏</span>
+
+          <span className="social-info">
+            <span className="social-name">X</span>
+            <span className="social-id">@PLAYRIZE109</span>
+          </span>
+
+          <span className="social-arrow">↗</span>
+        </a>
+
+        <a
+          href="https://note.com/playrize"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <span className="social-icon note-icon">n</span>
+
+          <span className="social-info">
+            <span className="social-name">note</span>
+            <span className="social-id">PLAYRIZE</span>
+          </span>
+
+          <span className="social-arrow">↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+)}
       
       <Routes>
         <Route path="/games" element={<Games />} />
